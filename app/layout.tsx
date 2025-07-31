@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { Home } from "lucide-react";
+import { GalleryHorizontal, Home } from "lucide-react";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
-
+import Footer from "@/components/ui/footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,6 +15,11 @@ const geistSans = Geist({
       name: "Home",
       link: "/",
       icon: <Home className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },   
+     {
+      name: "Projects",
+      link: "#projects",
+      icon: <GalleryHorizontal className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
   ]
 
@@ -34,7 +39,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -43,6 +48,7 @@ export default function RootLayout({
           className=""
         />
         {children}
+        <Footer/>
       </body>
     </html>
   );
