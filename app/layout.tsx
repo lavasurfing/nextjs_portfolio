@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import { GalleryHorizontal, Home } from "lucide-react";
+import { Contact, GalleryHorizontal, Home, Phone, User } from "lucide-react";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Footer from "@/components/ui/footer";
 
@@ -13,14 +13,25 @@ const geistSans = Geist({
   const navItems = [
     {
       name: "Home",
-      link: "/",
+      link: "#home",
       icon: <Home className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },
+    {
+      name: "About Me",
+      link: "#aboutme",
+      icon: <User className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },   
      {
       name: "Projects",
       link: "#projects",
       icon: <GalleryHorizontal className="h-4 w-4 text-neutral-500 dark:text-white" />,
+    },     
+    {
+      name: "Contacts",
+      link: "#contacts",
+      icon: <Phone className="h-4 w-4 text-neutral-500 dark:text-white" />,
     },
+
   ]
 
 const geistMono = Geist_Mono({

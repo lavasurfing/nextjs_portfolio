@@ -4,8 +4,8 @@ import { link } from "fs";
 
 export function Projects() {
   return (
-  <section id="projects" className="bg-black flex flex-col items-center justify-center gap-10">
-    <h2 className="text-white text-4xl">Projects</h2>
+  <section id="projects" className="bg-black flex flex-col items-center justify-center gap-10 p-10">
+    <h2 className="text-white text-4xl font-bold">Projects</h2>
     <ParallaxScroll projects={project_data} />
   </section>);
 }
