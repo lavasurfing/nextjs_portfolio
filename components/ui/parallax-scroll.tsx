@@ -19,7 +19,7 @@ export const ParallaxScroll = ({
   projects: Projects[];
   className?: string;
 }) => {
-  const gridRef = useRef<any>(null);
+  const gridRef = useRef<HTMLDivElement | null>(null);
   const { scrollYProgress } = useScroll({
     container: gridRef, // remove this if your container is not fixed height
     offset: ["start start", "end start"], // remove this if your container is not fixed height
@@ -51,9 +51,9 @@ export const ParallaxScroll = ({
               key={"grid-1" + idx}
             >
               <Link href={el.link} >
-                <img
+                <Image
                   src={el.image}
-                  className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition ease-in-out duration-300"
+                  className="h-80 w-full object-contain object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition ease-in-out duration-300 shadow-md shadow-blue-950"
                   height="400"
                   width="400"
                   alt="thumbnail"
@@ -66,9 +66,9 @@ export const ParallaxScroll = ({
           {secondPart.map((el, idx) => (
             <motion.div style={{ y: translateSecond }} key={"grid-2" + idx}>
               <Link href={el.link}>
-              <img
-                src={el.link}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition ease-in-out duration-300"
+              <Image
+                src={el.image}
+                className="h-80 w-full object-fill object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition ease-in-out duration-300 shadow-md shadow-blue-950"
                 height="400"
                 width="400"
                 alt="thumbnail"
@@ -81,9 +81,9 @@ export const ParallaxScroll = ({
           {thirdPart.map((el, idx) => (
             <motion.div style={{ y: translateThird }} key={"grid-3" + idx}>
               <Link href={el.link}>
-              <img
+              <Image
                 src={el.image}
-                className="h-80 w-full object-cover object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition ease-in-out duration-300"
+                className="h-80 w-full object-fill object-left-top rounded-lg gap-10 !m-0 !p-0 hover:scale-105 transition ease-in-out duration-300 shadow-md shadow-blue-950"
                 height="400"
                 width="400"
                 alt="thumbnail"
