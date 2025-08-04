@@ -2,7 +2,7 @@ import { WavyBackground } from "../ui/wavy-background"
 const Hero = () => {
     return (
     <WavyBackground className="max-w-4xl mx-auto pb-40">
-                <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center pb-4 mb-30">
+                <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center pb-4 mb-10">
             Ashish Hansdah
         </p>
         <p className="text-2xl md:text-4xl lg:text-7xl text-gray  font-bold inter-var text-center">
