@@ -31,6 +31,7 @@ Install
 
 
     #Deployment Details
+     - link : https://nextjs-portfolio-t7gy.vercel.app/
     
 
 
