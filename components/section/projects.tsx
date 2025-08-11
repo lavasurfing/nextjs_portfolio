@@ -50,10 +50,10 @@ const project_data= [
 ];
 
 const my_projects = [
-  {image:"/1.jpg", link:github_link},
-  {image:"/2.jpg", link:github_link},
-  {image:"/3.jpg", link:github_link},
-  {image:"/4.jpg", link:github_link},
+  {image:"/1.jpg", link:"https://github.com/lavasurfing/FastAPI_Backend_Layer/tree/master"},
+  {image:"/2.jpg", link:"https://github.com/lavasurfing/Local-AI-LLM-"},
+  {image:"/3.jpg", link:"https://github.com/lavasurfing/Dashboard-using-python"},
+  {image:"/4.jpg", link:"https://github.com/lavasurfing/nextjs_portfolio"},
 ]
 
 export default Projects;
